@@ -2,6 +2,8 @@
 
 It's just that. This landing page will be deployed on https://diamayorinnova.es.
 
+DiaMayorInnova is a software project created by 3 students with the collaboration of a company and 2 schools. You can find the project here: https://github.com/tcrurav/DiaMayorInnova
+
 ## Getting Started as devoloper
 
 Just create a new folder called "DiaMayorInnova" for instance, and clone this project:
