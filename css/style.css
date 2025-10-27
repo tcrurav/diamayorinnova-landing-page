@@ -83,7 +83,8 @@ body {
     text-align: left;
     position: relative;
     display: inline-block;
-    width: calc(100% - 3em * 2); /* 100% from the beginning */
+    width: calc(100% - 3em * 2);
+    /* 100% from the beginning */
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -93,7 +94,8 @@ body {
 }
 
 #collapsible-top-menu button {
-    width: calc(100% - 3em * 2); /* 100% from the beginning */
+    width: calc(100% - 3em * 2);
+    /* 100% from the beginning */
     border-radius: 9999px;
     border: 1px solid black;
     margin: .25em 3em;
@@ -131,12 +133,12 @@ nav.header-menu,
 }
 
 .header-title h1 {
-    font-size: 2.75em;
+    font-size: 2.75rem;
     font-weight: bold;
 }
 
 .header-title p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .aside-left {
@@ -516,6 +518,12 @@ footer ul {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    html,
+    body {
+        overflow-x: visible;
+    }
+
     #hamburger {
         display: none;
     }
