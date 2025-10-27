@@ -1,0 +1,955 @@
+:root {
+    --body-background-color: #F7F9F2;
+    --body-background-tint: #F0F2EB;
+
+    --dark-logo-background-color: #374957;
+
+    --table-of-contents-color: #E6ECD6;
+    --table-of-contents-light: #F6FCE5;
+    --table-of-contents-tint: #6E9600;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-background-color);
+}
+
+.header-top {
+    background-color: var(--body-background-color);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .header-logo {
+    width: 12rem;
+    height: 4rem;
+
+    background-image: url('../img/logo-diamayorinnova-light-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hamburger {
+    margin: 0 .5em;
+    padding: .25em;
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+#hamburger:hover {
+    background-color: var(--dark-logo-background-color);
+    color: var(--body-background-color);
+}
+
+#collapsible-top-menu {
+    background-color: var(--body-background-color);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#collapsible-top-menu li {
+    list-style-type: none;
+}
+
+#collapsible-top-menu a {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 3em * 2);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: var(--dark-logo-background-color);
+    border-bottom: 1px solid var(--dark-logo-background-color);
+    padding: 1em 0;
+}
+
+#collapsible-top-menu button {
+    width: calc(100% - 3em * 2);
+    border-radius: 9999px;
+    border: 1px solid black;
+    margin: .25em 3em;
+    padding: 1em;
+    background-color: var(--body-background-color);
+    font-size: medium;
+
+    cursor: pointer;
+}
+
+#collapsible-top-menu .button-inverse {
+    background-color: var(--dark-logo-background-color);
+    color: var(--body-background-color);
+}
+
+nav.header-menu,
+.header-buttons {
+    display: none;
+}
+
+.header-title {
+    margin: 6rem 1rem 1rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title * {
+    margin: .5em 0;
+    text-align: center;
+    width: 90vw;
+    font-weight: lighter;
+}
+
+.header-title h1 {
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+.header-title p {
+    font-size: 1em;
+}
+
+.aside-left {
+    display: none;
+}
+
+.section-main-content {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-middle {
+    width: 90vw;
+}
+
+.section-middle .introduction-image {
+    width: 90vw;
+    height: 45vw;
+    border-radius: 10px;
+    border: 1px black solid;
+
+    background-image: url('../img/login-image-tint.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-middle * {
+    margin-bottom: 1em;
+}
+
+.section-middle>article>h2 {
+    margin-top: 2em;
+}
+
+.section-middle .introduction-logos {
+    width: 90vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.logo-ies-el-rincon {
+    width: 10rem;
+    height: 10rem;
+
+    background-image: url('../img/logo-ies-el-rincon-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-ies-santa-brigida {
+    width: 10rem;
+    height: 10rem;
+
+    background-image: url('../img/logo-ies-santa-brigida-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-usabi {
+    width: 10rem;
+    height: 10rem;
+
+    background-image: url('../img/logo-usabi-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-ulpgc {
+    width: 35rem;
+    height: 6rem;
+
+    background-image: url('../img/logo-ulpgc-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-gobierno-de-canarias {
+    width: 25rem;
+    height: 10rem;
+
+    background-image: url('../img/logo-gobierno-de-canarias-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-redes-innovacion {
+    width: 15rem;
+    height: 10rem;
+
+    background-image: url('../img/logo-redes-innovacion-300ppp-alfa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.collapsible details {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: .75rem;
+    background: var(--table-of-contents-color);
+}
+
+.collapsible summary {
+    cursor: pointer;
+    list-style: none;
+    font: 600 1.25rem/1.2 system-ui;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.collapsible summary::before {
+    text-align: right;
+    content: "▸";
+    transition: transform .2s ease;
+}
+
+.collapsible details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.collapsible .content {
+    margin-top: .5rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .25s ease;
+}
+
+.collapsible details[open] .content {
+    max-height: 400px;
+}
+
+article .cards {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+article .card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card-icon * {
+    font-size: xx-large;
+}
+
+.card p {
+    margin-top: 1rem !important;
+}
+
+article .card.card-3-in-a-row {
+    width: 15rem;
+}
+
+article .card.card-2-in-a-row {
+    width: 22rem;
+}
+
+article .card.card-3-in-a-row:hover,
+article .card.card-2-in-a-row:hover {
+    color: white;
+    background-color: var(--dark-logo-background-color);
+}
+
+article>div>ul>li {
+    margin-left: 6rem;
+}
+
+.card-inverse {
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 20px;
+    width: 90vw;
+    color: white;
+    background-color: var(--table-of-contents-tint);
+}
+
+.card-inverse .card-inverse-buttons {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-inverse .card-inverse-buttons button {
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 1rem .5rem 0 0;
+    padding: .75em 1em;
+    background-color: var(--body-background-color);
+    font-size: small;
+
+    cursor: pointer;
+}
+
+.card-inverse .card-inverse-buttons button.button-inverse {
+    background-color: var(--table-of-contents-tint);
+    color: white;
+}
+
+article#article-profiles {
+    margin-bottom: 0;
+}
+
+.aside-right {
+    display: none;
+}
+
+section.section-before-footer>* {
+    margin: 4rem 0;
+}
+
+section.section-before-footer article h2,
+section.section-before-footer article p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+article.article-background {
+    padding: 3rem;
+    background-color: var(--body-background-tint);
+}
+
+article#article-faq {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 0;
+    width: 100vw;
+
+    color: white;
+    background-color: var(--dark-logo-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer-description {
+    padding-top: 3rem;
+    width: 90vw;
+}
+
+.footer-description .logo {
+    width: 90vw;
+    height: 25vw;
+    border-radius: 10px;
+
+    background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+    background-color: var(--dark-logo-background-color);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-description p {
+    text-align: center;
+    width: 90vw;
+}
+
+.footer-features {
+    margin-left: 50vw;
+    margin-top: 3rem;
+    width: 90vw;
+}
+
+.footer-access {
+    margin-left: 50vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 90vw;
+}
+
+footer ul {
+    margin-top: .75rem;
+    margin-left: 1rem;
+}
+
+.footer-features ul li:hover a,
+.footer-access ul li:hover a {
+    font-weight: bold;
+}
+
+.footer-features ul li a,
+.footer-access ul li a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.footer-features ul li a,
+.footer-access ul li a {
+    color: lightblue !important;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    nav.header-menu {
+        display: block;
+    }
+
+    nav.header-menu {
+        display: block;
+    }
+
+    .header-top .header-menu span {
+        margin: 0 .5em;
+        font-size: small;
+    }
+
+    .header-menu span:hover a {
+        font-weight: bold;
+    }
+
+    .header-menu span a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    .header-title {
+        margin: 6rem 3rem 3rem 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title .header-logo {
+        width: 15rem;
+        height: 4rem;
+
+        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .header-title * {
+        margin: .5em 0;
+        text-align: center;
+        width: 60vw;
+        font-weight: lighter;
+    }
+
+    .header-title h1 {
+        font-size: 2.75em;
+        font-weight: bold;
+    }
+
+    .header-title p {
+        font-size: 1em;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #hamburger {
+        display: none;
+    }
+
+    .header-buttons {
+        display: block;
+    }
+
+    .header-top .header-buttons button {
+        border-radius: 9999px;
+        border: 1px solid black;
+        margin-right: 1rem;
+        padding: .75em 1em;
+        background-color: var(--body-background-color);
+        font-size: small;
+
+        cursor: pointer;
+    }
+
+    .header-top .header-buttons .button-inverse {
+        background-color: black;
+        color: var(--body-background-color);
+    }
+
+    #collapsible-top-menu {
+        display: none;
+    }
+
+    .header-title {
+        margin: 6rem 3rem 3rem 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title .header-logo {
+        width: 15rem;
+        height: 4rem;
+
+        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .header-title * {
+        margin: .5em 0;
+        text-align: center;
+        width: 60vw;
+        font-weight: lighter;
+    }
+
+    .header-title h1 {
+        font-size: 2.75em;
+        font-weight: bold;
+    }
+
+    .header-title p {
+        font-size: 1em;
+    }
+
+    .section-main-content {
+        width: 100vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header-menu span:hover a,
+    .footer-features ul li:hover a,
+    .footer-access ul li:hover a {
+        font-weight: bold;
+    }
+
+    .header-menu span a,
+    .footer-features ul li a,
+    .footer-access ul li a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    .footer-features ul li a,
+    .footer-access ul li a {
+        color: lightblue !important;
+    }
+
+    .section-middle {
+        margin-left: 4rem;
+        width: 50rem;
+    }
+
+    .section-middle .introduction-image {
+        width: 50rem;
+        height: 30rem;
+        border-radius: 10px;
+        border: 1px black solid;
+
+        background-image: url('../img/login-image-tint.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .section-middle * {
+        margin-bottom: 1em;
+    }
+
+    .section-middle>article>h2 {
+        margin-top: 2em;
+    }
+
+    .section-middle .introduction-logos {
+        width: 50rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .logo-ies-el-rincon {
+        width: 10rem;
+        height: 10rem;
+
+        background-image: url('../img/logo-ies-el-rincon-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-ies-santa-brigida {
+        width: 10rem;
+        height: 10rem;
+
+        background-image: url('../img/logo-ies-santa-brigida-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-usabi {
+        width: 10rem;
+        height: 10rem;
+
+        background-image: url('../img/logo-usabi-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-ulpgc {
+        width: 35rem;
+        height: 6rem;
+
+        background-image: url('../img/logo-ulpgc-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-gobierno-de-canarias {
+        width: 25rem;
+        height: 10rem;
+
+        background-image: url('../img/logo-gobierno-de-canarias-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-redes-innovacion {
+        width: 15rem;
+        height: 10rem;
+
+        background-image: url('../img/logo-redes-innovacion-300ppp-alfa.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .collapsible details {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: .75rem;
+        background: var(--table-of-contents-color);
+    }
+
+    .collapsible summary {
+        cursor: pointer;
+        list-style: none;
+        font: 600 1.25rem/1.2 system-ui;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .collapsible summary::before {
+        text-align: right;
+        content: "▸";
+        transition: transform .2s ease;
+    }
+
+    .collapsible details[open] summary::before {
+        transform: rotate(90deg);
+    }
+
+    .collapsible .content {
+        margin-top: .5rem;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .25s ease;
+    }
+
+    .collapsible details[open] .content {
+        max-height: 400px;
+    }
+
+    article .cards {
+        margin-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    article .card {
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .card-icon * {
+        font-size: xx-large;
+    }
+
+    .card p {
+        margin-top: 1rem !important;
+    }
+
+    article .card.card-3-in-a-row {
+        width: 15rem;
+    }
+
+    article .card.card-2-in-a-row {
+        width: 22rem;
+    }
+
+    article .card.card-3-in-a-row:hover,
+    article .card.card-2-in-a-row:hover {
+        color: white;
+        background-color: var(--dark-logo-background-color);
+    }
+
+    article>div>ul>li {
+        margin-left: 6rem;
+    }
+
+    .card-inverse {
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 20px;
+        width: 50rem;
+        color: white;
+        background-color: var(--table-of-contents-tint);
+    }
+
+    .card-inverse .card-inverse-buttons {
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    .card-inverse .card-inverse-buttons button {
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 1rem .5rem 0 0;
+        padding: .75em 1em;
+        background-color: var(--body-background-color);
+        font-size: small;
+
+        cursor: pointer;
+    }
+
+    .card-inverse .card-inverse-buttons button.button-inverse {
+        background-color: var(--table-of-contents-tint);
+        color: white;
+    }
+
+    article#article-profiles {
+        margin-bottom: 0;
+    }
+
+    .aside-right {
+        display: none;
+    }
+
+    section.section-before-footer>* {
+        margin: 4rem 0;
+    }
+
+    section.section-before-footer article h2,
+    section.section-before-footer article p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    article.article-background {
+        padding: 3rem;
+        background-color: var(--body-background-tint);
+    }
+
+    .school-list {
+        margin-left: calc(50vw - 20rem);
+    }
+
+    article#article-faq {
+        margin-bottom: 0;
+    }
+
+    footer {
+        margin-top: 0;
+        width: 100vw;
+
+        color: white;
+        background-color: var(--dark-logo-background-color);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-description {
+        width: 40vw;
+        margin: 2rem;
+    }
+
+    .footer-description .logo {
+        width: 20rem;
+        height: 10rem;
+        border-radius: 10px;
+
+        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-color: var(--dark-logo-background-color);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .footer-description p {
+        text-align: center;
+        width: 20rem;
+    }
+
+    .footer-features {
+        margin: 2rem;
+        width: 10vw;
+    }
+
+    .footer-access {
+        margin: 2rem;
+        width: 10vw;
+    }
+
+    footer ul {
+        margin-top: .75rem;
+        margin-left: 1rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .aside-left {
+        position: sticky;
+        top: 6rem;
+
+        width: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .aside-left .table-of-contents {
+        padding: 1rem;
+        font-size: small;
+        font-weight: lighter;
+        border-radius: 10px;
+        background-color: var(--table-of-contents-color);
+        margin-bottom: 1em;
+    }
+
+    .aside-left .table-of-contents h1 {
+        font-size: small;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+    }
+
+    .aside-left .table-of-contents ul {
+        list-style-type: none;
+        /* margin-left: 1em; */
+        font-size: small;
+        font-weight: lighter;
+        margin-bottom: 1em;
+    }
+
+    .aside-left .table-of-contents ul li {
+        margin-top: .75em;
+    }
+
+    .aside-left .table-of-contents ul li:hover {
+        font-weight: bold;
+    }
+
+    .aside-left .table-of-contents ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .aside-left .table-of-contents ul li a.active {
+        color: var(--table-of-contents-tint);
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    .aside-left .logo {
+        width: 20rem;
+        height: 10rem;
+        border-radius: 10px;
+
+        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-color: var(--dark-logo-background-color);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
