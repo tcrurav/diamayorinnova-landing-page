@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,6 +28,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--body-background-color);
+    width: 100vw;
 }
 
 .header-top {
@@ -61,6 +67,7 @@ body {
 }
 
 #collapsible-top-menu {
+    margin-top: 6rem;
     background-color: var(--body-background-color);
     position: fixed;
     width: 100vw;
@@ -76,17 +83,17 @@ body {
     text-align: left;
     position: relative;
     display: inline-block;
-    width: calc(100% - 3em * 2);
+    width: calc(100% - 3em * 2); /* 100% from the beginning */
     text-decoration: none;
     font-size: large;
     font-weight: bold;
     color: var(--dark-logo-background-color);
     border-bottom: 1px solid var(--dark-logo-background-color);
-    padding: 1em 0;
+    padding: .5em 0;
 }
 
 #collapsible-top-menu button {
-    width: calc(100% - 3em * 2);
+    width: calc(100% - 3em * 2); /* 100% from the beginning */
     border-radius: 9999px;
     border: 1px solid black;
     margin: .25em 3em;
@@ -108,17 +115,18 @@ nav.header-menu,
 }
 
 .header-title {
-    margin: 6rem 1rem 1rem 3rem;
+    width: 100vw;
+    margin: 6rem 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-title * {
-    margin: .5em 0;
+.header-title .header-short-description {
+    margin: 1em 1em 1em 1em;
     text-align: center;
-    width: 90vw;
+    /* width: 90vw; */
     font-weight: lighter;
 }
 
@@ -136,7 +144,7 @@ nav.header-menu,
 }
 
 .section-main-content {
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -376,7 +384,7 @@ article#article-faq {
 
 footer {
     margin-top: 0;
-    width: 100vw;
+    width: 100%;
 
     color: white;
     background-color: var(--dark-logo-background-color);
@@ -571,7 +579,7 @@ footer ul {
     }
 
     .section-main-content {
-        width: 100vw;
+        width: 100%;
 
         display: flex;
         flex-direction: row;
@@ -833,7 +841,7 @@ footer ul {
 
     footer {
         margin-top: 0;
-        width: 100vw;
+        width: 100%;
 
         color: white;
         background-color: var(--dark-logo-background-color);
