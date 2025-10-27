@@ -118,7 +118,7 @@ nav.header-menu,
 
 .header-title {
     width: 100vw;
-    margin: 6rem 0;
+    margin: 6rem 0 1rem 0;
 
     display: flex;
     justify-content: center;
@@ -133,8 +133,9 @@ nav.header-menu,
 }
 
 .header-title h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .header-title p {
