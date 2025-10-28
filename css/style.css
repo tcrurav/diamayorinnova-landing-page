@@ -190,13 +190,17 @@ nav.header-menu,
     align-content: flex-start;
 }
 
-.introduction-logos a{
+.introduction-logos a {
+    display: inline-block;
     text-decoration: none;
 }
 
 .logo-ies-el-rincon {
     width: 10rem;
     height: 10rem;
+
+    max-width: 90vw;
+    max-height: 90vw;
 
     background-image: url('../img/logo-ies-el-rincon-300ppp-alfa.png');
     background-size: contain;
@@ -208,6 +212,9 @@ nav.header-menu,
     width: 10rem;
     height: 10rem;
 
+    max-width: 90vw;
+    max-height: 90vw;
+
     background-image: url('../img/logo-ies-santa-brigida-300ppp-alfa.png');
     background-size: contain;
     background-position: center;
@@ -217,6 +224,9 @@ nav.header-menu,
 .logo-usabi {
     width: 10rem;
     height: 10rem;
+
+    max-width: 90vw;
+    max-height: 90vw;
 
     background-image: url('../img/logo-usabi-300ppp-alfa.png');
     background-size: contain;
@@ -228,17 +238,23 @@ nav.header-menu,
     width: 35rem;
     height: 6rem;
 
-    background-image: url('../img/logo-ulpgc-300ppp-alfa.png');
+    max-width: 90vw;
+    max-height: 90vw;
+
+    background-image: url('../img/logo-ulpgc-sm-alfa.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .logo-gobierno-de-canarias {
-    width: 25rem;
+    width: 20rem;
     height: 10rem;
 
-    background-image: url('../img/logo-gobierno-de-canarias-300ppp-alfa.png');
+    max-width: 90vw;
+    max-height: 90vw;
+
+    background-image: url('../img/logo-gobierno-de-canarias-300ppp-sm-alfa.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,6 +263,9 @@ nav.header-menu,
 .logo-redes-innovacion {
     width: 15rem;
     height: 10rem;
+
+    max-width: 90vw;
+    max-height: 90vw;
 
     background-image: url('../img/logo-redes-innovacion-300ppp-alfa.png');
     background-size: contain;
@@ -545,7 +564,7 @@ footer ul {
         border: 1px solid black;
         margin-right: 1rem;
         padding: .75em 1em;
-        color:black;
+        color: black;
         background-color: var(--body-background-color);
         font-size: small;
         text-decoration: none;
