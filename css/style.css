@@ -93,7 +93,8 @@ body {
     padding: .5em 0;
 }
 
-#collapsible-top-menu button {
+#collapsible-top-menu>a {
+    text-align: center;
     width: calc(100% - 3em * 2);
     /* 100% from the beginning */
     border-radius: 9999px;
@@ -106,7 +107,7 @@ body {
     cursor: pointer;
 }
 
-#collapsible-top-menu .button-inverse {
+#collapsible-top-menu>a.button-inverse {
     background-color: var(--dark-logo-background-color);
     color: var(--body-background-color);
 }
@@ -187,6 +188,10 @@ nav.header-menu,
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+}
+
+.introduction-logos a{
+    text-decoration: none;
 }
 
 .logo-ies-el-rincon {
@@ -342,18 +347,20 @@ article>div>ul>li {
     margin-bottom: 0;
 }
 
-.card-inverse .card-inverse-buttons button {
+.card-inverse .card-inverse-buttons a {
     border-radius: 10px;
     border: 1px solid white;
     margin: 1rem .5rem 0 0;
     padding: .75em 1em;
+    color: black;
     background-color: var(--body-background-color);
     font-size: small;
+    text-decoration: none;
 
     cursor: pointer;
 }
 
-.card-inverse .card-inverse-buttons button.button-inverse {
+.card-inverse .card-inverse-buttons a.button-inverse {
     background-color: var(--table-of-contents-tint);
     color: white;
 }
@@ -533,13 +540,15 @@ footer ul {
         display: block;
     }
 
-    .header-top .header-buttons button {
+    .header-top .header-buttons a {
         border-radius: 9999px;
         border: 1px solid black;
         margin-right: 1rem;
         padding: .75em 1em;
+        color:black;
         background-color: var(--body-background-color);
         font-size: small;
+        text-decoration: none;
 
         cursor: pointer;
     }
