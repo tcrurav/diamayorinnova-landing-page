@@ -435,7 +435,7 @@ footer {
     height: 25vw;
     border-radius: 10px;
 
-    background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+    background-image: url('../img/logo-diamayorinnova-dark.png');
     background-color: var(--dark-logo-background-color);
     background-size: contain;
     background-position: center;
@@ -518,7 +518,7 @@ footer ul {
         width: 15rem;
         height: 4rem;
 
-        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-image: url('../img/logo-diamayorinnova-dark.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -593,7 +593,7 @@ footer ul {
         width: 15rem;
         height: 4rem;
 
-        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-image: url('../img/logo-diamayorinnova-dark.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -899,7 +899,7 @@ footer ul {
         height: 10rem;
         border-radius: 10px;
 
-        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-image: url('../img/logo-diamayorinnova-dark.png');
         background-color: var(--dark-logo-background-color);
         background-size: contain;
         background-position: center;
@@ -990,7 +990,7 @@ footer ul {
         height: 10rem;
         border-radius: 10px;
 
-        background-image: url('../img/logo-diamayorinnova-dark.jpeg');
+        background-image: url('../img/logo-diamayorinnova-dark.png');
         background-color: var(--dark-logo-background-color);
         background-size: contain;
         background-position: center;
