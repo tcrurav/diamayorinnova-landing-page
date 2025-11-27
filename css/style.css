@@ -411,6 +411,22 @@ article#article-faq {
     margin-bottom: 0;
 }
 
+.school-list {
+    width: 100%;
+    text-align: center;
+}
+
+.school-list ul {
+    /* margin-left: calc(50vw - 20rem); */
+    margin-left: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.school-list li {
+    margin-left: 1rem;
+}
+
 footer {
     margin-top: 0;
     width: 100%;
@@ -866,10 +882,6 @@ footer ul {
     article.article-background {
         padding: 3rem;
         background-color: var(--body-background-tint);
-    }
-
-    .school-list {
-        margin-left: calc(50vw - 20rem);
     }
 
     article#article-faq {
