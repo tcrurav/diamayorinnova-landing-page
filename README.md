@@ -33,3 +33,4 @@ All you need is... some time and...
 
 * https://gist.github.com/PurpleBooth/109311bb0361f32d87a2. A very complete template for README.md files.
 * https://undraw.co/. For the image on the introduction section.
+* https://codepen.io/josh-meredith/pen/JQWWMW. Simple Inertia Momentum scroll by CJHersh
